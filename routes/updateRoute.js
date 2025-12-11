@@ -11,7 +11,7 @@ router.get('/updates', async (req, res) => {
         res.json(updates); // Send the retrieved data as a JSON response
     } catch (err) {
         console.error(err);
-        res.status(500).send('Internal Server Error');
+        res.status(500).send(err);
     }
 });
 
